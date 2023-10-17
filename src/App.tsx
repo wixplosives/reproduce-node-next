@@ -5,6 +5,7 @@ import { ReactComponent as ViteLogo } from './assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
 import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
+import { TestComponent } from './components/test-component/test-component.js';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     return (
         <div className={styles.App}>
             <div>
+                <TestComponent />
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
                         height="6em"
